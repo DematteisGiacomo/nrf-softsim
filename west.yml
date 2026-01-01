@@ -2,11 +2,18 @@ manifest:
   remotes:
     - name: nrfconnect
       url-base: https://github.com/nrfconnect/
+    - name: dematteis
+      url-base: https://github.com/DematteisGiacomo/
   projects:
     - name: sdk-nrf
       path: nrf
-      revision: v3.1.1
+      revision: tags/v3.1.0
       remote: nrfconnect
       import: true
+    - name: asset-tracker-template
+      path: modules/lib/onomondo-softsim/samples/asset-tracker-template
+      remote: dematteis
+      repo-path: Asset-Tracker-Template
+      revision: att-v110-softsim-test
   self:
     path: modules/lib/onomondo-softsim
